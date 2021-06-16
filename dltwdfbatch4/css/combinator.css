@@ -1,0 +1,47 @@
+/* .mobile.jpn{
+    color: red;
+}
+
+.mobile.cn{
+    color: blue;
+}
+
+.mobile.us{
+    color: green;
+} */
+
+/* Class to Same Class */
+/* .vehicle .car.jpn{
+    color: blue;
+}
+
+.vehicle .car.cn{
+    color: blueviolet;
+}
+
+.vehicle .car.indo{
+    color: crimson;
+} */
+
+/* Class to Tag by group selector */
+/* .div1 b, .div1 p{
+    color: darkblue;
+} */
+
+/* Child Selector ( > ) သူနဲ့တိုက်ရိုက်သက်ဆိုင်တာပဲရသွားမှာ*/
+/* .div2 > i{
+    color: red;
+} */
+
+/* Sibling Selector
+1. General Sibling Selector (~)
+သူက သူနဲ့တူတဲ့ အမျိုးတူ parent မရှိတာကို sibling လို့သတ်မှတ်တာ
+*/
+/* .div4 ~ p{
+    color: seagreen;
+} */
+
+/* 2. Adjecent Sibling Selector(+) ကပါလျက်တည်ရှိနေတာ*/
+.div7 + p{
+    color: red;
+}

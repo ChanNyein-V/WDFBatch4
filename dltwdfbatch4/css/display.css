@@ -1,0 +1,146 @@
+.div1{
+    width: 600px;
+    height: 200px;
+    background-color: orange;
+    color: red;
+
+    margin-bottom: 50px;
+    /* position: relative; */
+}
+
+.div2{
+    width: 600px;
+    height: 200px;
+    background-color: yellow;
+    color: blue;
+
+    position: relative;
+}
+
+.div1 .bank{
+    display: block;
+
+    /* ဒီမှာဆိုရင် margin က div အထဲကနေပဲအလုပ်လုပ်မယ် */
+    margin-left: 50px;
+    
+}
+
+.div1 .money{
+    display: block;
+    margin-left: 100px;
+}
+
+.div1 .coin{
+    display: block;
+    margin-left: 150px;
+    /* position: absolute; */
+}
+
+.div2 .bank{
+    display: block;
+    margin-left: 50px;
+}
+
+.div2 .money{
+    display: block;
+    margin-left: 100px;
+}
+
+.div2 .coin{
+    display: block;
+    margin-left: 150px;
+    position: absolute;
+}
+
+.div3{
+    width: 600px;
+    height: 200px;
+    background-color: tomato;
+    border: 2px solid green;
+
+    margin-left: 300px;
+
+    /* ဘေးတိုက်ဖော်ပြချင်ရင် */
+    display: flex;
+
+    /* horizontal နေရာချတာ */
+    justify-content: center;
+    /* vertical နေရာချတာ */
+    align-items: center;
+}
+
+.div3 .c1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div3 .c2{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    color: white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    background-color: pink;
+    display: inline;
+}
+
+.display1{
+    width: 300px;
+    height: 100px;
+    background-color: silver;
+    border: 2px solid orange;
+
+    /* သူကပုံရိပ်ပဲပျောက်သွားတာ */
+    /* opacity: 0; */
+
+    /* သူကတော့ နေရာကျန်ခဲ့တယ် */
+    /* visibility: hidden; */
+
+    /* သူကတော့ လုံးဝပျောက်သွားတာ */
+    display: none;
+}
+
+.display2{
+    width: 300px;
+    height: 100px;
+    background-color: silver;
+    border: 2px solid red;
+}
+
+
+/* group selector */
+/* .div1 .bank,.div1 .money,.div1 .coin{
+    display: block;
+} */
+
+
+/* 
+padding က အသားပိုသာယူလိုက်တာ
+margin က ဘေးကိုနေရာယူလိုက်တာ/ခွာထုတ်တာ သူကလည်း 
+padding လိုပဲ left,right,top,bottom ရှိတယ် 
+margin:20px; ဆိုတာက l,r,t,b အားလုံးကိုပေးတာ တခုချင်းဆီလည်းပေးလို့ရတယ်
+margin:20px 10px; top&bottom left&right
+
+inline element ကို block element ဖြစ်စေချင်ရင် css > display:block ပေးလိုက်ရင်ရတယ်
+
+position: relative ဆိုတာ parent မှာပဲရှိရတာ positon: absolute ဆိုတာ child မှာပဲရှိရတာ
+ပြောမယ်ဆိုရင် absolute ကပြေးသွားတဲ့ element ကို relative နဲ့ပြန်ဖမ်းတာ
+
+
+
+
+*/

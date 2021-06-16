@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+/*font style ပြောင်းချင်ရင် font-family ကိုသုံးရတယ်
+စကားစု ၂ခုဆိုရင် double quote လုပ်ချင်လည်းရတယ်မလုပ်ချင်လည်းရတယ် ဒါပေမဲ့ 3ခုထက်ပိုရင်
+double quote သုံးတာပိုကောင်းတယ် စကားစု2စု ဆိုရင်လည်း အဲလိုပဲ
+
+ဒါတွေမဟုတ်သေးဘူး font တွေကို priority စီလို့ရတယ် အဲလိုစီလိုက်ရင်ထိပ်ဆုံးကဟာပဲအလုပ်မယ်
+တကယ်လို့ user စက်ထဲမှာ အဲfontမရှိရင်သူနောက်က font ကိုသုံးမယ်*/
+
+/*Local Machine Integrate*/
+/*body{
+	font-family: Arial,Century,"Times New Roman";
+}*/
+
+/*Google Font Local Integrate
+font ကို integrate လုပ်မယ်ဆိုရင် '@'rule ကိုသုံးရမယ်
+'@' rule 2ခုတွေ့ဖူးပြီ import,font-face
+
+font-face မှာ properties 2ခုသုံးပေးရမယ် - font-family,src
+font-face မှာရေးတဲ့ font-family က variable ကြေငြာတာပြန်ပြီခေါ်သုံးလို့ရအောင် 
+တခြားနေရာမှာfont-family ကြေငြာတာက ယူသုံးတာ
+
+src - local function က ဘယ် font ကိုခေါ်သုံးမှာလည်းဆိုတာကိုရွေးပေးရမှာ - file name
+       url - file ပတ်လမ်းကြောင်းပေးတာ
+
+သို့ပေသည် အရင်အလုပ်မလုပ်ဘူး အလုပ်လုပ်စေချင်ရင် .woff ဆိုတဲ့ format ပြောင်းပေးရတယ်
+
+fontတွေကို bold လုပ်ချင်ရင် html ကနေလုပ်စရာမလိုပဲနဲ့ css ကနေလည်းလုပ်လို့ရတယ်
+အဲအတွက် font-weight ကိုသုံးရင်ရပြီ
+
+
+font တွေကို italica လုပ်စေချင်ရင် font-style ကိုသုံးရင်ရတယ်
+
+နောက်တခုက paragraph တွေရေးရင် tabခုန်တာ news လိုမျိုးလုပ်ချင်ရင် text indentation
+လုပ်ချင်ရင် text-indent ကိုသုံးရတယ်
+text-indent မှာပုံမှန်က 50px ရှိတယ် default အနေနဲ့
+
+paragraph တွေကို headline ပုံစံလိုမျိုးလုပ်ချင်ရင် ရှိသမျှစကားလုံးကိုကြီးချင်ရင် text-transform ကို
+သုံးလို့ရတယ်
+
+*/
+
+@font-face{
+	/*make variable*/
+	font-family: stick;
+	src: local('Stick-Regular'),url(../libs/fonts/stick/Stick-Regular.ttf) format("woff");
+}
+
+@font-face{
+	font-family: akaya;
+	src: local('AkayaTelivigala-Regular'),url(../libs/fonts/akayatelivigala/AkayaTelivigala-Regular.ttf);
+}
+
+.p1{
+	font-family: stick;
+	text-transform: capitalize;
+}
+
+.p2{
+	font-family: 'Stick', sans-serif;
+	/*font-weight: 900;*/
+}
+
+.p3{
+	font-family: Arial;
+
+	/*font weight ကို bold ရင် numbers နဲ့လုပ်လို့ရတယ် 
+	value က 100 to 900
+	600 ကနေစမှ စပြောင်းတာ
+	font regular မှာ bold စဖြစ်တဲ့ value 600 ကနေစတယ်*/
+	font-weight: bold;
+	/*font-weight:900;*/
+
+	font-style: italic;
+	text-indent: 50px;
+	/*text-transform: uppercase;*/
+	/*text-transform: lowercase;*/
+	text-transform: capitalize;
+
+	/*font variant ဆိုတာစာလုံးအကြီးတွေအားလုံးဖြစ်တယ်ဒါေပမဲ့ နဂိုအကြီးကပိုကြီးတယ်*/
+	font-variant: small-caps;
+}
+
+/*နဂိုပုံမှန်အရောင်ကို ပြောင်းတာ*/
+.a1 {
+	text-decoration: none;
+	color: green;
+}
+
+/*site ကို clicked ပြီသွားတဲ့အခါ ရောင်ကိုပြောင်းတာ*/
+.a1:visited{
+	color: red;
+}
+
+.a1:hover{
+	color: blue;
+	font-size: 20px;
+}
+
+.menutext {
+	font-family: Cambria;
+	text-decoration: none;
+	background-color: green;
+	color: white;
+	/*padding: 20px;*/
+
+	/*top&bottom left&right
+	value က တခုပေးတာနဲ့ ၂ခုပေးတာနဲ့ မတူဘူး
+	တခုဆိုရင် left,right,top,bottom ဖြစ်ယူလိုက်တာ
+	2ခုဆိုရင် top&bottom left&right
+	padding ကနေရာအပိုယူတာ
+
+	padding ကိုတခုချင်းဆီပေးရင်ရတယ် padding-top ပေးလိုက်ရင်ရတယ်*/
+	/*padding: 10px 10px;*/
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	/* value 4ခုပေးရင် clock-wise ပုံစံသွားတယ် top right bottom left */
+	/*padding: 0 0 0 0;*/
+
+	/*ဘေးနားက border ကိုပြောင်းတာ designပြောင်းတာ border ကိုလုံး၂ဖြစ်စေချင်ရင်
+	ဒါကို hover ဖြစ်တဲ့ချိန်လည်းပေးလို့ရတဘ်*/
+	/*border-radius: 10px;*/
+}
+
+/*pseudo class(:)*/
+.menutext:hover {
+	background-color: darkblue;
+	color: lightcyan;
+	border-radius: 100px;
+}
+
+.menutext:active {
+	color: darkred;
+}
+
+.imgdesign{
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+
+	/*ဒီမှာလည်းပေးလို့ရတယ် သူကတော့ design ပြောင်းသွားတယ်*/
+	/*transition: 1s;*/
+}
+
+.imgdesign:hover{
+	width: 100px;
+	height: 100px;
+	/*smooth ဖြစ်ချင်တယ်ဆိုရင် mouse တင်တဲ့အချိန်
+	ease ပေးတာကပိုပြီ smooth ဖြစ်တာ*/
+	transition: 1s ease;
+}
+
+/*hover က mouse တင်လိုက်တာ တခုခုဖြစ်တာကိုပြောတာ
+
+active က click လိုက်တဲ့အချိန်ဖြစ်တာ
+
+font-family - src - properties
+background-image - src - attribute
+img - src - attribute*/

@@ -1,0 +1,112 @@
+.borderstyle1{
+	border-style: solid;
+}
+
+.borderstyle2{
+	border-style: dotted;
+}
+
+.borderstyle3{
+	border-style: double;
+}
+
+.borderstyle4{
+	border-style: dashed;
+}
+
+.borderstyle5{
+	border-style: inset;
+}
+
+.borderstyle6{
+	border-style: outset;
+}
+
+/*border တွေကိုလိုချင်သလို design ဆွဲတာ*/
+.borderdesign{
+	width: 300px;
+	height: 300px;
+	background-color: darkblue;
+
+	/*all angle*/
+	/*border-radius: 20px;*/
+
+	/*top&bottom left&right*/
+	/*border-radius: 10px 50px;*/
+
+	/*top-left top-right bottom-right bottom-left*/
+	/*border-radius: 10px 20px 50px 80px;*/
+
+	border-top-left-radius: 30px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 80px;
+	border-bottom-left-radius: 100px;
+}
+
+li{
+	/*bullet,square,circle*/
+	list-style-type: none;
+
+	/*bullet ကိုဖျောက်ချင်ရင် ဒီလိုလည်းလုပ်လို့ရတယ် အပေါ်ကလိုလည်းလုပ်လို့ရတယ်*/
+	/*list-style: none;*/
+
+	/*it will show number even in ol tag*/
+	list-style-type: decimal;
+	/*this will start with 0*/
+	/*list-style-type: decimal-leading-zero;*/
+
+	/*border: 1px solid red;*/
+
+	border: 1px;
+	border-style: solid;
+	border-color: darkred;
+
+	/*li ရဲ့ numbers တွေကို broder အထဲကိုပေါ်ချင်ရင် inside အပြင်ဆိုရင် outside*/
+	list-style-position: outside;
+}
+
+/*Attribute Selector*/
+input[type="text"]{
+	background-color: green;
+	color: white;
+	width: 200px;
+	border-radius: 20px;
+}
+
+input[type="email"]{
+	color: darkblue;
+}
+
+body{
+	background-image: url(../img/icon/icon1.png);
+	background-repeat: no-repeat;
+
+	/*value - center,
+	default(left-top),
+	right(center-right),
+	left(center-left),top(center-top),bottom(center-bottom)*/
+	/*background-position: center;
+	background-position: right;
+	background-position: left;
+	background-position: top;
+	background-position: bottom;*/
+
+	/*we can also give by ourselves position*/
+	/*background-position: left bottom;
+	background-position: right bottom;
+	background-position: right bottom;*/
+	background-position: left bottom;
+
+}
+
+
+
+
+
+/*selector - element,id,class,universal,group,single,attribute
+
+to use attribute selector : use '[]'
+name() = function
+name{} = object
+[] = array
+*/

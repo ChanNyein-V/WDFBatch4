@@ -1,0 +1,69 @@
+.textalign {
+	/*text-align: right;
+	text-align: left;
+	text-align: center;*/
+	text-align: justify;
+}
+
+.textdecoration {
+	/*text-decoration: underline;*/
+	/*text-decoration: line-through;*/
+	text-decoration: overline;
+}
+
+.textline {
+	/*letter-spacing: 5px;*/
+	/*line-height: 20px;*/
+	/*line-height: 200%;*/
+	line-height: 5;
+}
+
+.textshadow {
+	/*
+	shortcut key -> h v b c
+	h - horizontal
+	v - vertical
+	b - blur (ဝါတာကိုပြောတာ)
+	c - color (both naming & hash-code works)
+	text shadow မှာ value 4ခုထည့်ပေးရတယ်
+	this is going right & lower*/
+	text-shadow: 10px 10px 3px red;
+
+	/*this is going left & upper*/
+	/*text-shadow: -10px -10px 3px blue;*/
+}
+
+/*
+text-align:right;
+right ဆိုရင်ညာဘက်ကိုညှိတာ
+left ဘယ်ဘက်(default)
+center အလယ်(ship ပုံစံ)
+
+အဲလိုမလိုချင်ဘူး post တွေရေးသလို ဘယ်ညာအညီညှိချင်တယ်ဆိုရင် justify သုံးလို့ရတယ်
+
+အဲလိုစာသားတွေကိုပြုပြင်ချင်ရင် text-decoration ဆိုတာကိုသုံးရမယ်
+example - underline လုပ်ချင်ရင် text-decoration: underline;
+
+အခု font ကို style လုပ်ဖို့သိတာ 3ခုရှိတယ် -> color,font-size,text-decoration
+line-through ကစာကြောင်းအလယ်ကနေမျဥ်းကြောင်းဖြတ်သွားတာ
+overline စာလုံးအပေါ်မှာတားတာ
+
+စာကြောင်းတွေတကြောင်းနဲ့တကြောင်းမခြားခင် စာလုံးတလုံးနဲ့ခြားအောင်လုပ်မယ် အဲဒါအတွက်
+letter-spacing ကိုသုံးတယ်
+
+line တခုနဲ့တခု ခြားချင်ရင်တော့ line-height ကိုသုံးတယ် သူအတွက်က px(pixel)
+တခုပဲမဟုတ်ဘူး ဒီတိုင်းလည်းသုံးလို့ရတယ်
+example -
+line-height: 30px; က 30 pixels စားခြားသွားတာ
+line-height: 3; က ကျတော့ လိုင်း3လိုင်းစားကို ယူလိုက်တာ စာကြောင်း3ကြောင်းဆန့်တာကို
+တကြောင်းထဲ နေရာယူလိုက်တာ
+percentage(%) လည်းသုံးလို့ရတယ် 100, 200, 300, etc... 100% is default
+
+shadow ထည့်ချင်ရင် text-shadow ကိုသုံးရတယ်
+text-shadow: 10px(ညာဘက်ကို10px) 10px(အောက်ကို10pxဆင်း) 3px(3pxဝါလိုက်တာ) red;
+အဲလိုမဟုတ်ဘူး ဘယ်ဘက်ရွေ့ချင်ရင် horizontal value ကို minus(-) value ပေးလိုက်
+ရင်ရပြီ
+နောက်အပေါ်တက်ချင်ရင် vertical value ကို minus(-) value ပေးလိုက်ရင်ရပြီ
+
+24NUG WDFXXXX
+*/

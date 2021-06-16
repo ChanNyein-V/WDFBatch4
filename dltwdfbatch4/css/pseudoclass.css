@@ -1,0 +1,25 @@
+.div1{
+	width: 300px;
+	height: 100px;
+	background-color: lightgreen;
+}
+
+.div1:first-child{
+	width: 300px;
+	height: 100px;
+	background-color: orange;
+	color: red;
+}
+
+/*.div1:first-of-type{
+	background-color: red;
+}*/
+
+/*pseudo class signature(:)
+
+hover,visited,active,first-child
+
+first-child က div ထည့်မှာရှိတဲ့ div တွေထဲမှာ ပထမဆုံးdivကိုပြောင်းတာ
+အဲလိုပဲနောက်တခုသုံးလို့ရတာက first-of-type သူက first-child နဲ့ အတူတူပဲ
+
+1PSEUDO WDFXXXX*/

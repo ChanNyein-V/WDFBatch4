@@ -1,0 +1,118 @@
+<html>
+<head>
+	<title>Form Elements</title>
+</head>
+<body>
+
+<fieldset>
+	<legend align="center">This is a sample form</legend>
+	<form action="" method="">
+		<label for="firstname">First Name</label>
+		<input type="text" name="firstname" id="firstname" class="firstname" placeholder="Enter Your Name" autofocus required />
+
+		<br/><br/>
+
+		<label for="lastname">Last Name</label>
+		<input type="text" name="lastname" id="lastname" class="lastname" required minlength="5" maxlength="7" />
+
+		<br/><br/>
+
+		<label for="age">Age</label>
+		<input type="number" name="age" id="age" class="age" />
+
+		<br/><br/>
+
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" class="" />
+
+		<br/><br/>
+
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" class=""/>
+
+		<br/><br/>
+
+		<label>Gender</label>
+		<input type="radio" name="gender" id="gendermale" class="" value="M" /><label for="gendermale">Male</label>
+		<input type="radio" name="gender" id="genderfemale" class="" value="F" /><label for="genderfemale">Female</label>
+		<input type="radio" name="gender" id="genderother" class="" value="O" /><label for="genderother">Other</label>
+
+		<br/><br/>
+
+		<label>Fav Car Brand</label>
+		<input type="radio" name="car" id="cartoyota" class="" value="0" checked /><label for="cartoyota">Toyota</label>
+		<input type="radio" name="car" id="carsuzuki" class="" value="1" /><label for="carsuzuki">Suzuki</label>
+		<input type="radio" name="car" id="carmazada" class="" value="2" /><label for="carmazada">Mazada</label>
+
+		<br/><br/>
+
+		<label>Choose Your Fav Color</label>
+		<input type="checkbox" name="color" id="colorred" class="" value="0" /><label for="colorred">Red</label>
+		<input type="checkbox" name="color" id="colorgreen" class="" value="1" /><label for="colorgreen">Green</label>
+		<input type="checkbox" name="color" id="colorblue" class="" value="2" /><label for="colorblue">Blue</label>
+		<input type="checkbox" name="color" id="colorwhite" class="" value="3" /><label for="colorwhite">White</label>
+		<input type="checkbox" name="color" id="coloryellow" class="" value="4" /><label for="coloryellow">Yellow</label>
+
+		<br/><br/>
+
+		<label for="country">Country</label>
+		<!-- အဲလိုလည်းသုံးလို့ရတယ်
+		<select name="xxx" id="xxx" class="" multiple=""></select> -->
+		<select name="country" id="country" class="">
+			<option selected disabled>Choose your country</option>
+			<option value="MM">Myanmar</option>
+			<option value="THAI">Thailand</option>
+			<option value="INDO">Indonesia</option>
+			<option value="SLK">Sir-Lanka</option>
+			<option value="LAO">Laos</option>
+		</select>
+
+		<br/><br/>
+
+		<label for="date">Date</label>
+		<input type="date" name="date" id="date" class="" />
+
+		<br/><br/>
+
+		<label for="time">Time</label>
+		<input type="time" name="time" id="time" class="" />
+
+		<br/><br/>
+
+		<label for="datetime">Data And Time</label>
+		<input type="datetime-local" name="datetime" id="datetime" class="" />
+
+		<br/><br/>
+
+		<label for="nrc">NRC</label>
+		<input type="file" name="nrc" id="nrc" class="" multiple />
+
+		<br/><br/>
+
+		<label for="range">Range</label>
+		<input type="range" name="range" id="range" class="" min="0" max="150" step="50" value="50" />
+
+		<br/><br/>
+
+		<label for="bio">Bio</label><br/>
+		<textarea name="bio" id="bio" class="" rows="10" placeholder="Write Something..."></textarea>
+
+		<br/><br/>
+
+		<input type="reset" name="reset" id="reset" class="" value="Cancel">
+
+		<input type="submit" name="submit" id="submit" class="" value="Register" />
+
+		<button type="submit" name="login" id="login" class="">Login</button>
+
+		<br/><br/>
+
+		<input type="hidden" name="test">
+	</form>
+</fieldset>
+
+<hr>
+
+<iframe src="tabletag.html" width="1200px" height="300px"></iframe>
+</body>
+</html>

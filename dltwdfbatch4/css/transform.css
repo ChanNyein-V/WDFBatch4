@@ -1,0 +1,120 @@
+/* variable */
+:root{
+    --redcolor:red;
+    --greencolor: #09e31b;
+    --violetcolor: rgba(92,37,127,1.00);
+}
+
+.div1{
+    width: 100px;
+    height: 80px;
+    background-color: var(--greencolor);
+
+    transform: rotate(90deg);
+}
+
+.div2{
+    width: 200px;
+    height: 80px;
+    background-color: var(--violetcolor);
+
+    transform: rotate(50deg);
+}
+
+.div3{
+    width: 200px;
+    height: 80px;
+    background-color: var(--redcolor);
+
+    /* သူကတခြားဟာတွေလှည့်သလိုမလှည့်ပဲ ကျုံ့သွားတာ y ဝန်းရိုးတောင်ချုံ့သွားတာ/top,bottom ချုံ့သွားတာ */
+    transform: rotateX(50deg);
+}
+
+.div4{
+    width: 200px;
+    height: 80px;
+    background-color: navy;
+
+    /* သူက x ဝန်းရိုးအတိုင်းချုံ့သွားတာ/left,right ချုံ့သွားတာ */
+    transform: rotateY(50deg);
+}
+
+.div5{
+    width: 200px;
+    height: 80px;
+    background-color: orangered;
+
+    /* ချုံ့/ချဲ့ တာ */
+    transform: scale(0.5);
+}
+
+.country{
+    font-size: 15px;
+
+    /*
+    Vendors Prefix Properties (-)
+    -webkit- => chrome,safari,opera(-o-),IE(-ms-)
+    -moz- => firefox
+    */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    /* arrow ကိုဖျောက်ချင်ရင် သုံးတာ */
+    appearance: none;
+
+    padding: 10px 25px 10px 10px;
+    background-image: url(https://pixy.org/src/84/849539.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 90%;
+}
+
+h1{
+    text-align: center;
+}
+
+p.text{
+    text-align: center;
+    color: red;
+}
+
+@media(max-width:600px){
+
+    h1{
+        font-size: 25px;
+        color: blue;
+    }
+
+    p.text{
+        color: darkcyan;
+    }
+}
+
+/* css မှာ background ကိုပြောင်းရင် တခုချင်းဆီလိုက်ပြောင်းနေရတာ
+အချိန်ကုန် အဲလိုမလုပ်ပဲ variable တခုပေးလိုက်ရင် အဲတခုကိုပြောင်းလိုက်တာနဲ့
+အဆင်ပြေတယ် 
+nickname သဘော variable တွေက :root ဆိုတဲ့အထဲမှာရှိနေရမယ်
+variable ကိုပေးချင်ရင် '--' ဆိုပြီပေးရတယ် ပြောမယ်ဆိုရင် property create လုပ်သလိုမျိုးပဲ
+example -> --name:"";
+
+css မှာကြော်ငြာထားတဲ့variable ကိုပြန်ခေါ်သုံးရင် var(variable) ဆိုပြီ ခေါ်သုံးရတယ်
+
+css properties တချို့က browser တွေကိုရွေးတယ်
+
+browser တွေကို vendors လို့လည်းခေါ်တယ်
+browser မှာအလုပ်မလုပ်တဲ့ css properties တွေအတွက် vendors prefix properties ကိုသုံးပြီလုပ်လို့ရတယ်
+Vendors Prefix Properties (-) browser ကိုသိအောင်လုပ်ပေးတာ
+-webkit-appearance: none; -> chrome,safari,opera(-o-),IE(-ms-) အတွက်
+-moz-appearance: none; -> firefox
+အဲလိုမပေးရင် ထည့်တဲ့ပုံနဲ့ default ပါတဲ့ဟာနဲ့ထပ်နေမယ်
+
+appearance ကို browser သိဖို့လိုတယ် webkit + moz (vendor prefix) ပေးလိုက်ရင်ရပြီ
+
+screen size ကိုသေးလိုက်တဲ့ အချိန်ကျရင် view တွေကိုပြောင်းချင်ရင် size မတူညီတဲ့ display ပေါ်မှာ
+ပေါ်ချင်ရင် @media(max-width:600px){} ဆိုပြီ ပြောင်းပြီအဲထဲမှာ ကိုယ်လိုချင်တဲ့ size ပြန်ချိန်းလို့ရတယ် ပြောင်းလို့ရတယ်
+
+@import,fontface,media,keyframes
+
+15MEDIA WDFXXXX
+*/

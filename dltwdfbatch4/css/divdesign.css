@@ -1,0 +1,162 @@
+* {
+	cursor: pointer;
+	/*color: lightgrey;*/
+}
+
+.firstdiv {
+	/*background-color: green;*/
+	background-color: rgba(34,75,127,1.00);
+	width: 200px;
+	height: 100px;
+	color: white;
+	font-size: 20px;
+
+	/*opacity: 1;*/
+}
+
+.divtwo {
+	width: 300px;
+	height: 300px;
+	/*background: purple;*/
+	/*cursor: pointer;*/
+	color: white;
+
+	border: 2px;
+	border-style: solid;
+	border-color: blueviolet;
+
+	/*CSS မှာ code ချုပ်ပြီရေးလို့ရတယ် တစ်ကြောင်းထဲရေးလို့ရတယ်
+	border: 3px solid blue;
+	border border-style border-color အဲလိုမဟုတ်ပဲ ပေးချင်သလိုတော့ပေးလို့ရတယ်
+	but format မကျလို့
+	*/
+
+	/*double/single quote ကထည့်လို့လည်းရတယ် မထည့်လည်းရတယ်
+	background-image ဆိုတာကပုံပဲထည့်လို့ရတယ်
+	background-color က solid color ပဲထည့်လိုရတယ်
+	background ကျတော့ အားလုံးထည့်လို့ရတယ်
+	*/
+	background-image: url("../img/cover/bg3.jpg");
+	
+	background-repeat: no-repeat;
+
+	/*သူက x ကိုပဲ repeat ဖြစ်တာ*/
+	/*background-repeat: repeat-x;*/
+
+	/*သူက y ကိုပဲ ဖြစ်တာ*/
+	/*background-repeat: repeat-y;*/
+
+	/*background နေရာချရင်သုံးတာ*/
+	background-position: center;
+}
+
+.divthree{
+	width: 300px;
+	height: 300px;
+	background-color: silver;
+
+	border: 3px solid navy;
+
+	font-size: 20px;
+	color: whitesmoke;
+
+	/*gradient color ဆိုရင် အနည်းအရောင်က2ရောင်စပ်ထားတာဖြစ်မယ်
+	အဲထက်လည်းပိုလို့ရတယ်
+	css မှာ gradient သုံးရင် function သုံးရတယ်
+	gradient ကအမျိုးမျိုးရှိတယ်
+	basic အနေနဲ့ရှိတာ linear, radial
+
+	linear-gradient မှာတော့ သူက horizontal(အလျားလိုက်)အတိုင်းအလုပ်လုပ်တာ
+	သူက background-colorမှာအလုပ်မလုပ်ဘူး background-image မှာတော့ရတယ်
+	linear-gradient မှာ naming-color,hash-code,rgba အားလုံးရတယ်
+
+	*/
+
+	/*background: linear-gradient(blue,green,orange,red);
+	background: linear-gradient(#bf2015,#0cd7ed,#d6244b,#24d6bb);
+	background: linear-gradient(rgba(63,192,127,1.00),rgba(227,59,24,1.00),rgba(227,63,180,1.00),rgba(227,218,46,1.00));*/
+
+	/*linear-gradient က waterfall ပုံစံမျိုးလို့ အပေါ်ကနေအောက်ကိုသွားတာ
+	အခုအဲလိုမဟုတ်ပဲ ညာဘက်သွားတာ/ဘယ်ကသွားတာလုပ်လို့ရတယ်
+	0deg ဆိုတာဘာမှမဖြစ်ဘူး ဒီတိုင်းပဲ 10deg ပေးလိုက်ရင် ဘယ်ဘက်ကနေ စတက်ပြီပြောင်းမယ်
+
+	*/
+	/*background: linear-gradient(180deg,red,blue);*/
+
+	/*နောက်တခုက radial-gradient
+	သူကတော့ အလယ်ကနေအပြင်ကိုထွက်တာ radar လို့မျိုး အထဲကနေအပြင်ကိုထွက်တာ
+	သူလည်း linear-gradient လိုမျိုးပဲ 3ခုလုံးနဲ့အလုပ်လုပ်တယ်
+	သူမှာ deg ဆိုတာ အလုပ်မလုပ်ဘူး ဘာလို့လည်းဆိုတော့ centerကနေအလုပ်လုပ်နေလို့
+	*/
+	background: radial-gradient(red,blue,green);
+	background: radial-gradient(#bf2015,#0cd7ed,#d6244b,#24d6bb);
+	background: radial-gradient(rgba(63,192,127,1.00),rgba(227,59,24,1.00),rgba(227,63,180,1.00),rgba(227,218,46,1.00));
+
+}
+
+.divfour{
+	width: 300px;
+	height: 300px;
+	font-size: 20px;
+	color: green;
+
+	background-color: silver;
+	/*background-image မှာ background + linear gradient ကိုပေါင်းပေးထားတာ*
+	background-image & background မှာကောအလုပ်လုပ်တယ် 
+	သူက deg ပေးရင်လည်း အလုပ်လုပ်တယ်
+	*/
+	/*background-image:linear-gradient(rgba(63,192,127,0.5),rgba(227,59,24,0.5)),url(../img/cover/bg3.jpg);*/
+	/*background:linear-gradient(90deg,rgba(63,192,127,0.5),rgba(227,59,24,0.5)),url(../img/cover/bg3.jpg);*/
+	
+	background-repeat: no-repeat;
+
+	/*linear gradident မှာ ပေးတဲ့ color ကို limit လုပ်ချင်ရင် (color percentage) အဲလိုလုပ်ပြီပေးလို့ရတယ်
+
+	အဲလိုမဟုတ်ပဲ အရောင်ကိုပေးတဲ့နေရာမှာ red-30% blue-20% အဲလိုပေးရင် ကျန်တဲ့%ကိုသူကနောက်ဆုံးအရောင်နဲ့ဖြည့်လိုက်တယ်
+	note - အပေါ်အရောင်ရဲ့value ကအောက်အရောင်ရဲ့value ထက်ကြီးရင် အရောင်ကပြတ် အဲလိုမဟုတ်ဘူး
+	အောက်က အရောင်valueက အပေါ်ကအရောင်value နဲ့ များပြီဆိုရင် အရောင်ကရောသွားတာ
+	example red-30% blue-60% ပေးရင် ရောတဲ့အရောင်က10%ဖြစ်သွားမယ်*/
+	background: linear-gradient(
+		yellow 30%,
+		green 60%);
+}
+
+/*
+function ဆိုတာက nameတခုနဲ့စတယ် အနောက်ကနေ round bracket ကပ်မယ် ()
+function မှာလည်း value ရှိတယ် value 1 -> single parameter function
+value 2 -> multi parameter function -> name(value,value)
+folder အပေါ်တခုတက်ချင်ရင် "../" နဲ့ထွက်လို့ရတယ်
+
+cursor ဆိုတာက mouse cursor ပုံစံပြောင်းတာ
+အဲဒါကို project တခုလုံးကိုဖြစ်စေချင်ရင် universal selector(*) နဲ့ လုပ်လို့ရတယ်
+အဲဒါကို programming မှာဆိုရင် any လို့ meaning ထွက်တယ် 
+universal selector မှာကျန်တဲ့ attributes တွေလည်းပေးလို့ရတယ်
+သူကအောက်ကကျန်တဲ့ selector တွေကို ဖုံးလွှမ်းသွားတယ်
+
+selectors -> id,group,class,element,universal
+
+rgba color picker and hash color နဲ့ဘာကွာလည်းဆိုရင်
+hash က '#' ဆိုတဲ့ code နဲ့စတယ်
+rgba က function လိုမျိုး သူမှာ parameter ရှိတယ်
+rgba - red,green,blue,alpha(သူကobesity/blurကိုပြောတာ)
+
+color code 3ခုသိရပြီ အဲဒါက rgba and hash-code and naming
+rgba က background/background-color နဲ့ပဲအလုပ်လုပ်တယ်
+alpha က transparent ဖြစ်တဲ့ obesity ကိုပြောတာ သူက 0 ကနေ 1 ထိရှိတယ်
+သူကဘယ်လိုကစားလည်းဆိုရင် တန်ဖိုးကြည့်ရင်ပိုပြီအရောင်ရင့်လာတယ် တန်ဖိုးနည်းရင် အရောင်မှိန်တယ်
+
+ဒီလိုမလုပ်ပဲနဲ့တခြားနည်းလည်းပေးလို့ရတယ် အဲဒါက opacity ဆိုတဲ့ attribute ပဲ ဒါပေမဲ့ သူက
+သူ့ကို သုံးတဲ့ element တခုလုံးကို effect ဖြစ်တယ် for example - div တခုမှာခေါ်ထားရင်
+အဲ div တခုလုံးကိုဝါလိုက်တာ
+
+background :
+can -> solid-color,image,gradient-color,radial-gradient
+
+background-color :
+can -> solid-color
+can't -> gradient-color,image,radial-gradient
+
+background-image :
+can -> gradient-color,image,radial-gradient
+can't -> solid-color
+*/

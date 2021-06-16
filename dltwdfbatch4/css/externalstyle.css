@@ -1,0 +1,37 @@
+/*this is single selector*/
+p {
+	color: orangered;
+}
+
+/*this is group selector*/
+h1,h2,h3,h4 {
+	color: blueviolet;
+}
+
+/*ID selector*/
+#myself,#pray {
+	color: royalblue;
+}
+
+#sakasa {
+	color: seagreen;
+}
+
+/*class selector*/
+.ip,.mp {
+	color: darkorange;
+}
+
+.sp {
+	color: rebeccapurple;
+}
+
+.f20 {
+	font-size: 20px;
+}
+
+.div1,.div2y {
+	color: violet;
+}
+
+/*24NUG WDFXXXX*/

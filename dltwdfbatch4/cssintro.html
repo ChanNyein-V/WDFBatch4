@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Intro</title>
+	<link href="css/cssintro.css" rel="stylesheet" type="text/css" />
+</head>
+
+<style type="text/css">
+
+	/*element ကိုတိုက်ရိုက်ခေါ်သုံးလိုက်တဲ့အတွက် element selector*/
+	h1{
+		color: red;
+	}
+
+	p{
+		color: navy;
+		font-size: 20px;
+	}
+
+/*ဒါက override လုပ်လိုက်တာ code တွေက waterflow အတိုင်းသွားတာ အဲဒါကြောင့် အပေါ်က color: navy ဆိုဒါကမပေါ်တော့ပဲ override လုပ်သွားတာ ဒါပေမဲ့ သူကအပေါ်က property တခုကိုပဲ overrideလုပ်လိုက်တာ*/
+	p{
+		color: darkred;
+		/*font-size: 30px;*/
+	}
+/*CSS properties - color, font-size */
+</style>
+
+<body>
+	<div>
+		<h1>Hello CSS h1</h1>
+		<h2>Hello CSS h2</h2>
+		<h3>Hello CSS h3</h3>
+		<h4>Hello CSS h4</h4>
+		<h5>Hello CSS h5</h5>
+		<h6>Hello CSS h6</h6>
+	</div>
+
+	<div>
+		<h3>This is paragraph h3.</h3>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+
+	<div>
+		<h4>This is paragraph h4.</h4>
+		<p style="color: darkblue; font-size: 30px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+
+	<div>
+		<h2>This is paragraph h2.</h2>
+		<p style="color: green;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+
+</body>
+</html>
+
+<!-- အခုကရေးနေတာက html 5 ကိုရေးနေတာ အဲတော့သူကိုသိအောင်ဆိုရင် <!DOCTYPE html>သူက အပိတ် tag မရှိဘူး 
+
+css ကအဓိကဘာလုပ်မှာလည်းဆိုတော့ သူကအရောင်းချယ်မှာ CSS မှာရေးနည်း၃နည်းရှိတယ်။
+1. Internal Style
+2. Inline Style
+3. External Style
+
+html file ထဲမှာ html tag ကိုအသုံးပြုပြီး CSS code တွေရေးလို့ရတဲ့၂နည်းရှိတယ် အဲဒါ internal and inline
+external ကကျတော့ css file ထဲမှာရေးပြီ html file ထဲမှာလာချိတ်တာ သူကဘာလို့ရေးလည်းဆိုတော့ code ကိုရှင်းရှင်းလင်းလင်းဖြစ်စေချင်လို့/html file ထဲမှာ html code တွေများနေတဲ့အချိန်ကျရင် ရေးတာ
+internal - html tag / inline - html attribute
+<style> ဆိုတာက html tag သူက css အတွက်ဖန်တီးထားတာ သူက head နဲ့ body ကြားထဲမှာ ရေးတယ် သူထဲမှာ type ဆိုတဲ့ attribute တခုကြောငြာရတယ် အဲထဲမှာ text/css ဆိုပြီကြောငြာရတယ် တခြားနေရာ ရေးလို့မရဘူးမဟုတ်ဘူးရတယ် format မကျတာပဲရှိတယ်
+
+CSSထဲမှာ selectors ဆိုတာရှိတယ် သူကရွေးထုတ်လိုက်တဲ့ပုံစံပြောတာ selectors ကအများကြီးရှိတယ်။ selectors မှာ elements, class and id selectors ဆိုပြီရှိတယ်
+
+selectors {
+	properties:value;
+	properties:value;
+}
+ဒီလိုရေးရတယ် ဒါပေမဲ့တချို့သော attribute တွေမှာ ""/'' နဲ့ရေးတယ် သို့ပေသည်နည်းတယ်
+
+attribute = ""/'' နဲ့ရေးတယ်
+
+html element ကိုတိုက်ရိုက်ခေါ်သုံးရင်တော့ element selector
+
+color ကိုတော့ naming color မသုံးပဲ hex-code color နဲ့လည်းရေးလို့ရတယ်
+
+class ဆိုတာက html element တွေမှာ တချို့တူတဲ့ tag တွေကိုအရောင်မတူအောင်ပြောင်းဖို့သုံးတယ်
+
+meaningfull ဖြစ်တဲ့စကားလုံးတွေကြားထဲမှာ '-' hipen ဆိုတာရှိတယ်
+ -->
