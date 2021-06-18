@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+}
+
+nav{
+    width: 1200px;
+}
+
+nav ul{
+    /* list-style-type: none; */
+    list-style: none;
+}
+
+nav ul li{
+    background-color: green;
+    width: 250px;
+    text-align: center;
+
+    /* display: inline; */
+
+    float: left;
+
+    border-right: 2px solid black;
+
+    line-height: 50px;
+
+    /* transition: 1s; */
+    transition: background-color 1s, line-height 1s;
+}
+
+/* သူက ညာမှာခတ်ထားတဲ့ border ကိုဖျောက်တာ */
+/* nav ul li:last-of-type{
+    border-right: none;
+} */
+
+nav ul li:first-of-type{
+    border-left: 2px solid black;
+}
+
+nav ul li:hover{
+    background-color: orangered;
+
+    line-height: 60px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* li ထဲက ဘေးနားက bullet တွေကို ပျောက်ချင်ရင် list-style-type:none; ပေးလို့ရသလို
+list-style:none; ဆိုပြီလည်းပေးလို့ရတယ် ၂ခုလုံးသုံးလို့ရတယ် 
+menu မှာ display:inline; သုံးရင် သူကလုံးဝကပ်ပြီ width,height ကအလုပ်မလုပ်တော့ဘူး
+အဲဒါကြောင့် float ကိုသုံးတာပိုသင့်တော်တယ်
+*/

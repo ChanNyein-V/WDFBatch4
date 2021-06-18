@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+:root{
+    --wcc:#f4f4f4;
+    --gyc:#777;
+    --dbc:#2541a8;
+}
+
+/* သူက documentတွေမှာပေးထားတဲ့ element တွေကို အညီညှိချင်လို့သုံးတာ
+document တခုလိုဖန်တီးလိုက်တာ */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Squada One',cursive;
+
+    /* 100% ပေးရင်သူက element height ထိပဲသွားမှာ 
+    vh ကျတော့ မြင်နေရတဲ့ screen ရဲ့ height ထိကိုသွားတာ */
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* scroll ကိုဖျောက်ချင်ရင်  */
+    /* margin: 0;  */
+    /* သူကနဲ့ပေးပြီလို့လည်းဖျောက်လို့ရတယ် hidden ကျတော့
+    ဖျောက်လို့လည်းရတယ် ဖော်လို့လည်းရတယ်*/
+    overflow: hidden;
+}
+
+.container{
+    width: 480px;
+    background-color: var(--wcc);
+
+    /* 
+    စာသားကိုအရောင်ထည့်ချင်ရင် text-shadow ဆိုပြီသုံးရတာ
+    အခုက container ကိုပေးချင်တာဆိုတော့ box-shadow ကိုသုံးမယ်
+    h v b c */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.container h2{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.form{
+        /*top&bottom left&right  */
+    padding: 30px 40px;
+}
+
+.form .form-control{
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.form-control label{
+    /* inline element ကို block element ဖြစ်ချင်လို့သုံးတာ */
+    display: block;
+    color: var(--gyc);
+    margin-bottom: 5px;
+}
+
+.form-control .input{
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+}
+
+.form-control .input:focus{
+    outline: 0;
+}
+
+/* placeholder ကိုခေါ်ချင်ရင် pseudo element ကိုသုံးရမယ် 
+placeholder မှာ font-family: inherit သုံးလို့မရဘူး ဘာလို့လည်းဆိုတော့ သူ့ parent ကမလုပ်ထားလို့*/
+.form-control .input::placeholder{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.form .btn{
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+
+    border-radius: 4px;
+    border: 0;
+    background-color: var(--dbc);
+
+    color: #fff;
+}
+
+.form .btn:active{
+    transform: scale(0.98);
+
+    /* အဲလိုမဟုတ်ပဲ ကိုယ်တိုင်font ရေးထည့်လို့လည်းရတယ် inherit ဆိုတာအပေါ်မှာရှိတဲ့ parent ရဲ့ font-family ကို inherit လုပ်တာ */
+    font-family: inherit;
+}
+
+/* 17INHERIT WDFxxxx */
