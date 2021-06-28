@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Template String</title>
+</head>
+<body>
+    <script>
+        let name = "kyaw kyaw",
+            age = 24,
+            city = "Mandalay",
+            job = "Developer";
+
+            // console.log(name);
+
+            // const html; // အဲလိုကြေငြာလို့မရဘူး value ထည့်ရမယ်
+            // console.log(html);
+
+            let abc;
+
+            // Without Template String ဆိုတာ backtick ကိုပြောတာ
+
+            // html = '<ul><li>Name : '+ name +'</li><li>Age : '+ age +'</li></ul>';
+            
+            abc = '<ul>'+
+                '<li>Name : '+ name + '</li>'+
+                '<li>Age : '+ age +'</li>'+
+                '<li>City : '+ city +'</li>'+
+                '<li>Job : '+ job +'</li>'+
+                '</ul>';
+
+            document.write(abc); // document.write က document မှာပေါ်ချင်လို့ သုံးတာ
+
+            // With Template String သူကျတော့ backtick ကိုသုံးပြီရေးတာ သူကိုသုံးရင် ပိုလွယ်တယ် တကြောင်းထဲနဲ့ပြီတယ် +/,/''/"" တွေခြားစရာမလိုတော့ဘူး ရှုပ်ရှုပ်ရှပ်ရှပ်မဖြစ်တော့ဘူး
+            html = `
+            <ul>
+                <li>Name : ${name}</li>
+                <li>Age : ${age}</li>
+                <li>City : ${city}</li>
+                <li>Job : ${job}</li>
+            </ul>
+            `;
+
+            document.write(html);
+    </script>
+</body>
+</html>
+
+
+
+<!-- <ul>
+    <li>Name : aung aung</li>
+</ul> -->
+
+<!-- 
+    const က အသေ value မပြောင်းဘူး override လုပ်လို့မရဘူး
+    var က လုပ်လို့ကရတယ် value override လုပ်လို့ရတယ်
+
+    const နဲ့ variable တခုကြေငြာရင် တန်ဖိုးထည့်ကိုထည့်ရတယ်/မထည့်ရင် error တက်တယ် မဖြစ်မနေထည့်ကိုထည့်ပေးရတယ်
+
+    var & let ကကျတော့ variable ကြေငြာရင် တန်ဖိုးမထည့်ရင်လည်းရတယ် သူရဲ့ default value ပဲဝင်နေတယ် null/String
+
+
+ -->

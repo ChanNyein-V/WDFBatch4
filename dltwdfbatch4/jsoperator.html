@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Js Operator</title>
+</head>
+<body>
+    <script type="text/javascript">
+        console.log("Hay");
+
+        // grouping variable declarations -> var,let,const
+        let num1,num2;
+
+        num1 = 100;
+        num2 = 20;
+        num3 = 30;
+
+        document.write("Adding Result = " + num1 + num2 + "<br/>"); //10020 why? => String တွေလိုပဲထင်လိုက်တာ "+" နဲ့ကပ်ရေးလိုက်တော့
+        document.write("Adding Result = " + (num1 + num2) + "<br/>"); //120
+        document.write("Subtraction Result = " + (num1 - num2) + "<br/>"); //80
+        document.write("Multiplication Result = " + (num1 * num2) + "<br/>"); //2000
+        document.write("Division Result = " + (num1 / num2) + "<br/>"); // 5
+        document.write("Modulus Result = " + (num1 % num3) + "<br/>"); // 10
+
+        // document.write("Increment Result After = " + (num1++) +  "<br/>"); //100 / ++ က တခါရေး၁တိုးမယ် ၂ခါရေး၂တိုးမယ်
+        // document.write(num1 + "<br/>"); //101
+        // document.write("Increment Result After = " + (num1++) +  "<br/>");
+        // document.write(num1 + "<br/>");
+        // document.write("Increment Result After = " + (num1) +  "<br/>");
+        // document.write(num1 + "<br/>");
+        // document.write("Increment Result After = " + (num1++) +  "<br/>");
+        // document.write(num1 + "<br/>");
+
+        // document.write(num1 + "<br/>");
+        // document.write("Increment Result Before = " + (++num1) + "<br/>"); //101
+        // document.write("Increment Result Before = " + (++num1) + "<br/>"); //102
+
+        // document.write("Decrement Result After = " + (num1--) + "<br/>"); //100
+        // document.write(num1 + "<br/>"); // 99
+        // document.write("Decrement Result After = " + (num1--) + "<br/>"); // 99
+        // document.write(num1 + "<br/>"); //98
+        // document.write("Decrement Result After = " + (num1) + "<br/>");
+
+        // document.write(num1 + "<br/>");
+        // document.write("Decrement Result Before = " + (--num1) + "<br/>");
+        // document.write(num1 + "<br/>");
+
+        // let msg = prompt("Write Something");
+        // console.log(msg);
+        // document.write(msg);
+        // window.alert(msg);
+
+        // prompt("Give me Something"); သူကကျတော့ ပေါ်တယ် data တော့ယူလိုက်တယ် ပြန်မထုတ်ပြနိုင်တာ
+
+        // console.log(num1);
+    </script>
+</body>
+</html>
+
+<!-- 
+    Arithmethic Operators -> ပေါင်းနုတ်မြှောက်စား
+    + => adding
+    - => subtraction
+    * => multiplication
+    / => division
+    % => modulus (remainder)
+    ++ => increment -> after (x++) / before (++x)
+    -- => decrement -> after (x--) / before (--x)
+
+    grouping variable declarations က variable တွေကို group လိုက်ကြေငြာတာ variable type တူခဲ့ရင်
+    grouping variable declarations က var,let,const 3ခုစလုံးရတယ် ဒါေပမဲ့ console ထုတ်ရင်တော့ error တက်မယ်
+
+    increment/decrement ၁တိုး၁လျော့
+    သူမှာကတော့ condition တခုရှိတယ် operation တခုပြီမှလုပ်မှာလား မပြီခင်လုပ်မှာလား
+    operation after or operation before
+    num1++              ++num1
+ -->

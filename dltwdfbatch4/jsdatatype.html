@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Js Datatype</title>
+</head>
+<body>
+    <script type="text/javascript">
+        console.log('ahay');
+
+        // Type of Operator
+
+        // String
+        const name = "Kay Kay";
+        console.log(typeof name);
+
+        const age1 = '24';
+        console.log(typeof(age1));
+
+        const q1 = 'false';
+        console.log(typeof q1);
+
+        const q2 = 'False';
+        console.log(typeof q2);
+        
+        // Number
+        const age = 24;
+        console.log(typeof(age));
+
+        // Boolean
+        const q = false;
+        console.log(typeof q);
+
+        // Undefined -> memory ပေါ်မှာ နေရာယူထားတယ်
+        let test;
+        console.log(typeof test);
+
+        // Null -> memory ပေါ်မှာနေရာမယူထားဘူး / null ပင်မဲ့ object data type တခုပဲ
+        const car = null;
+        console.log(car);
+        console.log(typeof car);
+
+        // Object <class method> Date Object လိုလည်းခေါ်တယ်
+        const date = new Date();
+        console.log(date);
+        console.log(typeof date);
+
+        const address1 = "no 120, st 75x36 Mandalay";
+        console.log(address1);
+        console.log(typeof address1);
+
+        // Variable တခုထဲကို value အများကြီးထည့်ချင်ရင် object or array ထဲထည့်လို့ရတယ်
+        // Object({}) -> key & value => var varname = {key:"value"};/ value တခုနဲ့တခုကြားမှာ ',' နဲ့ခြားတယ်
+        // object ထဲမှာ semi-colon မသုံးဘူး
+        const address = {
+            no:"no 120",
+            street:"st 75x36",
+            city:"Mandalay"
+        };
+        console.log(address);
+        console.log(typeof address);
+
+        console.table(address);
+        console.error(car);
+
+        // Array([]) -> Object အနေနဲ့ပြတာ
+        const hobbies = ["movie","music","sport"];
+        console.table(hobbies);
+        console.log(typeof hobbies);
+
+    </script>
+</body>
+</html>
