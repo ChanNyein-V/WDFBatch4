@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Js Type Conversion</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            let val;
+            val = 5;
+            console.log(val);
+            console.log(typeof val);
+
+            // Number to String -> '',"",``
+            /* အဲ 3မျိုးနဲ့ပြောင်းလို့ရတယ်
+            နောက်တခုက String() ဆိုတဲ့ method ကိသုံးပြီလည်းပြောင်းလို့ရတယ်
+            toString method နဲ့လည်းပြောင်းလို့ရတယ်/toString method ကို concatenate လုပ်ပြီလည်းပြောင်းလို့ရတယ် */
+
+            let val1;
+            val1 = String(5);
+            // val1 = (5).toString();
+
+            console.log(val1);
+            console.log(typeof val1);
+
+            // Boolean to String
+            /*  */
+
+            val2 = false;
+            console.log(val2);
+            console.log(typeof val2);
+
+            // val3 = String(false);
+            val3 = false.toString();
+
+            console.log(val3);
+            console.log(typeof val3);
+
+            // Date to String
+            val4 = String(new Date);
+            // val4 = new Date.toString(); // can't use
+
+            console.log(val4);
+            console.log(typeof val4);
+        </script>
+    </body>
+</html>
