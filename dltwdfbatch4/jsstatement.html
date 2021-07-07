@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Statement</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let p = 10;
+        let q = 50;
+        console.log(p); //10
+
+        // p = q; //assign q value to p
+        // console.log(p); //50
+
+        /* q value is 50,p value is 10 */
+        q += p; // same as q = p + q; can't write like this '=+'
+
+        q -= p; // same as q = p - q;
+
+        q *= p; // same as q = p * q;
+
+        q /= p; // same as q = q / p;
+
+        q %= p; // same as q = q % p;
+
+        const username = prompt("Enter Username");
+        const password = prompt("Enter Password");
+
+        /* if(username === "aungaung" && password === "12345"){
+            console.log("Welcome");
+        }else{
+            console.log("Try Again");
+        } */
+
+        if(username === "aungaung" || password === "12345"){
+            console.log("Welcome");
+        }else{
+            console.log("Try Again");
+        }
+    </script>
+</body>
+
+</html>
