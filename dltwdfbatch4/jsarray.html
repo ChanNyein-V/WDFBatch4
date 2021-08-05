@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Array</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    const arr5 = [700,100,50,800,200,150,10];
+
+    console.log(arr5.sort(function (a,z){
+      return a-z;
+    }));
+
+    console.log(arr5.sort(function (x,y){
+      return y-x;
+    }));
+
+
+    // filter(); array method
+    /*အသက်အပိုင်းခြားလုပ်ထားတဲ့နေရာတွေမှာသုံးတာ example ၁၈နှစ်မပြည့်သေးရင် အရက်နဲ့ပျက်သက်တဲ့
+    * information မပြဘူး ၁၈နှစ်ပြည့်ရင် ပြတာ အဲလိုမျိုး
+    *
+    * filter ကဘာနဲ့တူလည်းဆိုရင် looping ပတ်တာနဲ့ အတူတူပဲ
+    *
+    * */
+    const ages = [10,20,30,40,50,16];
+
+    const result = ages.filter(function(age){
+      /*if(age >= 16){
+        return age;
+      }*/
+
+      return age >= 18;
+    });
+
+    console.log(result);
+
+    /*သူက ကျတော့ function တွေကို တခုချင်းဆီ array ထဲကို push နဲ့ထည့်လိုက်တာ
+    * အပေါ်ထဲမှာ မထည့်ပဲ တခုချင်းဆီထည့်လိုက်တာ*/
+    // let arrfuns = [funone,funtwo,funthree];
+    let arrfuns = [];
+
+    const funone = function (){
+        console.log('I am funone');
+    }
+
+    const funtwo = function (){
+        console.log('I am funtwo');
+    }
+
+    const funthree = function (){
+        console.log('I am fun funthree');
+    }
+
+    arrfuns.push(funone);
+    arrfuns.push(funtwo);
+    arrfuns.push(funthree);
+
+    console.log(arrfuns);
+
+    const output = arrfuns.filter(function (arrfun){
+        /*if(arrfun === funtwo){
+            return arrfun;
+        } //funtwo*/
+
+        // return arrfun === funtwo; //funtwo
+
+        /*if (arrfun !== funone){
+            return arrfun;
+        }*/
+        //funtwo,funthree
+
+        return arrfun !== funone; //funtwo,funthree
+    });
+    console.log(output);
+
+</script>
+
+</body>
+</html>

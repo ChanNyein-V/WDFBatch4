@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow Function</title>
+</head>
+<body>
+<script type="text/javascript">
+    /*Regular Function */
+    let regfun1 = function(num1){
+        return num1;
+    }
+
+    console.log("This is regfun1 = " + regfun1(50));
+
+    let regfun2 = function(num1){
+        // return num1 = 500;
+        num1 = 60;
+        return num1;
+    }
+
+    console.log("This is regfun2 = " + regfun2(50));
+
+    /*Arrow Function (Single Parameter)
+    *
+    * function ဆိုတဲ့ word မပါတော့ပဲ '()' နဲ့ '{}' ကြားထဲမှာ ဒီ '=>' (arrow) ပုံစံနဲ့ဝင်လာတာ
+    *
+    * */
+    // Method 1
+    let arrfun1 = (num1)=>{
+        return num1;
+    }
+    console.log("This is arrfun1 = " + arrfun1(200));
+
+    // Method 2 arrow function မှာ single parameter ဖြစ်ခဲ့ '()' မထည့်လည်းရတယ်
+    let arrfun2 = num1=>{
+        return num1;
+    }
+
+    console.log("This is arrfun2 = " + arrfun2(300));
+
+    // Method 3 single parameter တကြောင်းထဲနဲ့ရေးချင်ရင်လည်းရတယ်
+    let arrfun3 = num1=>num1; //return ပြန်စရာမလိုပဲ အဲလိုရေးလို့ရတယ်
+    console.log("This is arrfun3 = " + arrfun3(400));
+
+    let arrfun3_1 = num1=>num1+500; // calculation လည်းလုပ်လို့ရတယ်
+    console.log("This is arrfun4 = " + arrfun3_1(400));
+
+    // Arrow Function (Multi Parameter)
+
+    let multiarrfun1 = (num1,num2)=>{
+        const result = num1 + num2;
+        return result;
+    }
+    console.log("This is multiarrfun1 = " + multiarrfun1(200)); // NaN
+    console.log("This is multiarrfun1 = " + multiarrfun1(10,20)); //30
+
+    /*let multiarrfun1 = (num1,num2=50)=>{
+        const result = num1 + num2;
+        return result;
+    }
+    console.log("This is multiarrfun1 = " + multiarrfun1(200));*/
+    /*အပေါ်မှာ default value ကြေငြာခဲ့တဘ်ဆိုရင် အောက်မှာ parameter ကိုခေါ်ပြီ value ထည့်
+    * တဲ့အချိန်ကျရင် တခုပဲထည့်ရင်ရသလို ၂ခုလည်းထည့်လို့ရတယ်*/
+
+    // Without Parameter
+    let wpfun1 = ()=>{
+        return "I Love Mandalay";
+    }
+    console.log('This is wpfun1 = ' + wpfun1());
+
+    /*တကြောင်းထဲဆိုရင် '()' ထည့်စရာမလိုဘူး*/
+    let wpfun2 = ()=>"I am from Mandalay";
+    console.log('This is wpfun2 = ' + wpfun2());
+
+
+
+</script>
+</body>
+</html>
+
+<!--
+13ARR WDFXXXX
+-->

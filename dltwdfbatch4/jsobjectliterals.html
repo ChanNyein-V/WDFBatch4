@@ -6,24 +6,49 @@
 </head>
 
 <body>
-    <script type="text/javascript">
-        /* Js Object (Array as Object (API)) တွေမှာအသုံးများတယ်
-        နောက်တခုက JSON object ဆိုပြီလည်းရှိတယ် သူက နည်းနည်းပဲကွဲတယ်
-        */
-       let obj1 = {
-           firstname : "Tin",
-           middlename : "Htut",
-           lastname : "Aung"
-       }
+<script type="text/javascript">
+    /* Js Object (Array as Object (API)) တွေမှာအသုံးများတယ်
+    နောက်တခုက JSON object ဆိုပြီလည်းရှိတယ် သူက နည်းနည်းပဲကွဲတယ်
+    */
+    let obj1 = {
+        firstname: "Tin",
+        middlename: "Htut",
+        lastname: "Aung"
+    }
 
-       console.log(obj1); //value
-       console.table(obj1); //table
+    console.log(obj1); //value
+    console.table(obj1); //table
 
-       /* မရှိတဲ့ value ကိုထုတ်ရင် undefine ပဲထွက်မယ် အဲလိုမဟုတ်ပဲတခုပဲ/တခုချင်းဆီထုတ်ချင်ရင် (.)ကိုသုံးပြီထုတ်လို့ရတယ် */
-       console.log(obj1.firstname); //Tin
-       console.log(obj1.middlename); //Htut
-       console.log(obj1.lastname); // Aung
-    </script>
+    /* မရှိတဲ့ value ကိုထုတ်ရင် undefine ပဲထွက်မယ် အဲလိုမဟုတ်ပဲတခုပဲ/တခုချင်းဆီထုတ်ချင်ရင် (.)ကိုသုံးပြီထုတ်လို့ရတယ် */
+    console.log(obj1.firstname); //Tin
+    console.log(obj1.middlename); //Htut
+    console.log(obj1.lastname); // Aung
+
+
+    //key & object => add:function
+    const todo = {
+        add:function(){
+            console.log("Add todo ...");
+        },
+        edit:function (x){
+            console.log("Have to " + x);
+        }/*,
+        delete:function (){
+            console.log("Delete all notes");
+        } အဲလိုမလုပ်ပဲနဲ့ အထဲမှာမဖန်တီးပဲနဲ့ အပြင်ကနေဖန်တီးမယ်*/
+    };
+
+    todo.delete = function (){
+        console.log('Delete all notes');
+    };
+
+    todo.add();
+    todo.edit('cook');
+    todo.delete();
+
+
+
+</script>
 </body>
 
 </html>

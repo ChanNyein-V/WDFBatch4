@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Looping</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    /*2. For In Loop
+    for(key in arrayobj){
+        code to executed
+    }*/
+
+    let students = {
+        name:"Aung Aung",
+        address:"Mandalay",
+        parent:"U Ba"
+    };
+
+    // console.log(students.parent);
+
+    for(key in students){
+        // document.write(students.key); //undefined
+        // document.write("<br/>");
+        document.write(key + " is " + students[key] + "<br/>");
+    }
+    /*for in loop မှာဆိုရင် document.write(students.key); ဒီလိုခေါ်လို့မရဘူး array ပုံစံနဲ့ခေါ်ရမယ်
+    * for in loop က array ကို inherit လုပ်ထားလို့ array လိုမျိုးခေါ်ရမှာ
+    * object တိုင်ကို array လို့မျိုးခေါ်ရတာမဟုတ်ဘူး for in loop တခုထဲမှာပဲ ချွင်းချက်အနေနဲ့
+    * for in loop object တခုထဲသုံးလို့ရတာမဟုတ်ဘူး array အတွက်လည်းသုံးလို့ရတယ်
+    * */
+
+    let myarrs = ["red","green","black","gray","blue","pink"];
+    console.log(myarrs); // list ထွက်လာမဘ်
+    console.log(myarrs[3]); // index number နဲ့ထုတ်တာ gray ထွက်မယ်
+
+    for (key in myarrs){
+        document.write(key + " is " + myarrs[key] + "<br/>");
+    }
+
+    /*
+    * 3. While Loop
+    * သူကဘာနဲ့ဆင်တူလည်းဆိုရင် for loop နဲ့တူတယ်
+    * for loop မှာ statement 3ခုရှိတယ် သူမှာကျတော့ 3ခုပဲ နည်းနည်းကွဲတယ်
+    *
+    * start
+    * while(end){
+    *   before print ++ --
+    *   code to executed
+    *   after print ++ --
+    * }
+    *
+    * အောက်က loop ကိုကြည့်မယ်ဆိုရင် 10 ထိသွားပြီ looping ပတ်တယ် ဒါပေမဲ့
+    * နောက်ဆုံး b ရဲ့ value ကိုထုတ်ကြည့်ရင် 11 ရမယ်
+    * သူက ၁တိုးပြီမှထွက်သွားတာမို့လို့
+    * */
+
+    let b = 0;
+    while(b <= 10){
+        console.log("B value is " + b);
+        b++;
+    }
+    console.log("b = " + b);
+
+    let c = 0;
+    while(c < 10){
+        c++;
+        console.log("C value is " + c);
+    }
+    console.log("c = " + c);
+
+    let l = 0;
+    while (l < myarrs.length){
+        document.write("color is " + myarrs[l] + "<br/>");
+        l++;
+    }
+
+    /*4. Do While Loop
+    * start
+    *
+    * do{
+    *   before print ++ --
+    *   code to executed
+    *   after print ++ --
+    * }while(en);
+    * */
+
+    let n = 0;
+    /*do{
+        console.log('N is value ' + n);
+        n++;
+    }while (n < 10);
+    console.log("n = " + n);*/
+
+    do{
+        n++;
+        console.log('N is value ' + n);
+    }while (n < 10);
+    console.log("n = " + n);
+
+    let p = 0;
+    do{
+        document.write("My fav color is = " + myarrs[p] + "<br/>");
+        p++;
+    }while (p < myarrs.length);
+
+    /*5. forEach Loop
+    * foreach က တခါဝင်ရင် တခါထုတ်သွားတာက for loop ထက်ပိုလွယ်တယ် အရင် myarr က
+    * myarr1 ထဲက တခန်းကို အရင်စစ်တယ် ပြီရင် ထုတ်ပေးတယ် ပြီရင် နောက်တခန်းကိုစစ်တယ်ထုတ်ပေးတယ်
+    * အဲလိုလုပ်ရင်လုပ်ရင်နဲ့ ကျန်တာတွေကိုပါထုတ်ပေးတာ
+    * သူကအဖြေထွက်ရင် pure value နဲ့ထွက်ပေးတာ
+    *
+    * forEach loop မှာ parameter 3ခုရှိတယ် ပထမက value, ဒုတိယက index number, တတိယ က array
+    * array အခုဆောက်ထားတဲ့ထဲမှာရှိတဲ့ index/value ကို သူရဲ့ length/အရေအတွက် တိုင်းထုတ်ပြတာ
+    * example array တခုမှာ value ၆ခုရှိရင် ၆ခါထုတ်ပြမယ်
+    *
+    * forEach(function(value,index,array))*/
+
+    let myarrs1 = ["red","green","black","gray","blue","pink"];
+
+    myarrs1.forEach(function(myarr){
+        document.write(myarr + " color" + "<br/>");
+    });
+
+    myarrs1.forEach(function(myarr,idx){
+        document.write("index number is " + idx + " value is " + myarr + " color" + "<br/>");
+    });
+
+    myarrs1.forEach(function (myarr,idx,arr){
+        console.log(arr);
+        document.write("index number is " + idx + " value is " + myarr + " color" + "<br/>");
+    });
+
+    /*6. Map*/
+    const users = [
+        {id:1, name:'Aung Aung'},
+        {id:2, name:'Maung Maung'},
+        {id:3, name:'Naung Naung'}
+    ];
+    const ids = users.map(function (user){
+        return user.id; //array နဲ့ထွက်လာတယ်
+    });
+    console.log(ids);
+
+    const names = users.map(function (user){
+        return user.name;
+    });
+    console.log(names);
+
+    console.log(users);
+
+
+
+</script>
+</body>
+</html>

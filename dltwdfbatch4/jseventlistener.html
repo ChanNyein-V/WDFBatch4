@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Event Listener</title>
+</head>
+<body>
+
+<form action="" method="">
+    <label for="name">Name</label><br/>
+    <input type="text" name="name" id="name" class="" onchange="myfun()" />
+
+    <br/><br/>
+
+    <label for="address">Address</label><br/>
+    <input type="text" name="address" id="address" class="" />
+</form>
+
+<script type="text/javascript">
+
+    /*For text*/
+    function myfun(){
+        // console.log('Thanks for your typing');
+        let textname = document.getElementById('name');
+        // console.log(textname.value);
+        textname.value = textname.value.toUpperCase(); //ကြိုက်တဲ့ *case လာ uppercase ပြောင်းပေးတာ
+        textname.value = textname.value.toLowerCase(); //ကြိုက်တဲ့ *case လာ lowercase ပြောင်းပေးတာ
+
+    }
+</script>
+
+</body>
+</html>

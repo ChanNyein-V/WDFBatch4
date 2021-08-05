@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Regular Function</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    /* Regular Function
+    * function ရေးမှာမို့လို့ 'function' နဲ့စတယ်
+    * ပြီရင် function name လာတယ် name ကကျတော့ JS မှာပေးထားတဲ့/ကြေငြာပေးပြီသာဖြစ်တဲ့ဟာတွေမပါရဘူး
+    * function name ကို lowercase နဲ့ပဲစရမယ်
+    * function ကရေးပြီတာနဲ့ အလုပ်မလုပ်ဘူး ပြန်လှမ်းခေါ်မှ အလုပ်လုပ်တာ
+    * ခေါ်သုံးမယ်ဆိုရင် ဘယ်လိုခေါ်မလဲ -> functionName(); အဲလိုပြန်ခေါ်မှလုပ်တာ
+    * function ခေါ်တာကို developer အခေါ်အဝေါ်အနေနဲ့ recall or invoke ပြောလေ့ရှိတယ်/ခေါ်ဝေါ်လေ့ရှိတယ်
+    *
+    * function functionName(){
+    *   code to be executed
+    * }
+    *
+    * JS မှာ function ကို ရေးပြီအောက်ကခေါ်မှ အလုပ်လုပ်တာမဟုတ်ဘူး အပေါ်မှာအရင်ခေါ်ပြီအောက်ကနေ
+    * ရေးရင်လည်း အဆင်ပြေတာ
+    *
+    * function ထဲမှာ console,alert ထုတ်လို့ရတယ် / return လည်းပြန်လို့ရတယ်
+    * */
+
+    /*Regular Function ->
+    1. Manual Function
+    2. Parameter Function
+    3. Nameless Function (Anonymous Function)
+
+    1. Manual Function (value မပါတဲ့ function)
+    Eg - toString
+    */
+
+    /*greet();
+    function greet(){
+        console.log('hello Mandalay');
+    }*/
+
+    function greet(){
+        console.log('hello Mandalay');
+    }
+    // greet();
+
+    function printalert() {
+        window.alert('Hello Myanmar');
+    }
+    // printalert();
+
+
+    /*return က ဘာနဲ့တူလည်းဆိုရင် console.log နဲ့တူတယ်
+    * return က ဘာနဲ့တူလည်း variable နဲ့တူတယ် operation တွေလည်းလုပ်လို့ရတယ်
+    * ပြန်ခေါ်သုံးမယ်/calculate လုပ်မယ်ဆိုရင် return ကိုသုံးရမယ် return ပြန်ပေးရတယ် user ကို result
+    * ထုတ်ပြချင်ရင် return ပြန်ရတယ်
+    *
+    * ဒါပေမဲ့ return ပြန်ထားတဲ့ function ပြန်ခေါ်သုံးရင် မရဘူး ဘာမှမထွက်ဘူး print-out function တခုခုနဲ့
+    * တွဲသုံးမှ return ပြန်တဲ့ function ရဲ့ result ကိုမြင်ရမှာ
+    * function ပြန်ထုတ်မယ်ဆိုရင် just return, if not - have to use it with console,alert (or) document.write
+    * function တခုမှာ return တခါပဲပြန်လို့ရမယ်
+    * */
+    function hello(){
+        return "Hello Yangon";
+    }
+    // hello(); // can't do like this
+    // console.log(hello());
+    // window.alert(hello());
+    // document.write(hello());
+
+    /*2. Parameter Function
+    * a. single Parameter function
+    * b. multi Parameter function
+    *
+    * a. Single Parameter Function*/
+
+    function myfun1(city){
+        console.log("Hello " + city);
+    }
+    myfun1("Mandalay");
+    myfun1("Yangon");
+    myfun1("Bago");
+    myfun1();
+
+    /*parameter တောင်တဲ့ function တခုကို value မထည့်ရင် undefined ထွက်မယ်
+    * အဲလိုမဟုတ်ဘူး undefined မထွက်ချင်ဘူးဆိုရင် parameter မှာ default value ပေးလို့ရတယ်
+    * */
+    function myfun2(city="Yangon"){
+        console.log(`Hello ${city}`);
+    }
+    myfun2("Mawlamying");
+    myfun2(200);
+    myfun2();
+
+
+    /*
+    * b. Multi Parameter Function
+    *
+    * သူကကျတော့ parameter ရှိသလောက် လက်ခံတယ် အခု၃ခုလက်ခံတယ်ဆိုရင် value 3ခုထည့်လို့လည်းရတယ် မထည့်လည်းရတယ်
+    * ဘာမှမဖြစ်ဘူး 3ခုထက်ကျော်ရင်လည်းရတယ် အဓိက multi parameter function က တန်ဖိုးတခုထက်
+    * ပိုပြီထည့်လို့ရတယ်/လက်ခံတယ်
+    * */
+    function multifun1(x,y,z){
+        console.log(`X value is = ${x} and Y value is = ${y} and Z value is = ${z}`);
+    }
+    multifun1(5,10,15);
+    multifun1(10,20,30,40);
+
+    /*return ပြန်တဲ့ function ကျတော့ ဒီတိုင်း function ကိုပြန်ခေါ်ရင် အဖြေမမြင်ရဘူး
+    * သူကိုမြင်စေချင်ရင် console,alert,document.write အဲလို print ထုတ်တဲ့ function တခုခုနဲ့
+    * တွဲသုံးမှအဆင်ပြေမှာ*/
+    function multifun2(x,y,z){
+        const result = x + y + z;
+        return result;
+    }
+
+    multifun2();
+    multifun2(10,20,30);
+    console.log(multifun2(10,20,30));
+    console.log(multifun2(10,20,30,40));
+
+    /*သူကျတော့ ကြိုပြီ defined လုပ်တဲ့ value ကို ဘယ်ချိန်မှာသုံးလည်းဆိုရင် parameter မပါတဲ့အချိန်မှာသုံးတယ်/အလုပ်လုပ်တယ်
+    * နောက် ဘာမှမထည့် NaN(not a number) ဆိုပြီပေါ်တယ်*/
+    function multifun3(x,y,z=100){
+        const result = x + y + z;
+        return result;
+    }
+    console.log(multifun3());
+    console.log(multifun3(10,20,30));
+    console.log(multifun3(10,20));
+
+    let num1 = 0;
+    let num2 = 1;
+    let num3 = 2;
+
+    /*parameter မှာ value ကိုတိုက်ရိုက်လည်းပေးလို့ရလို/variable သုံးပြီတဆင့်ခံလည်းပေးလို့ရတယ်*/
+    function multifun4(a,b,c){
+        console.log(`A value is ${a}, B value is ${b}, C value is ${c}`);
+    }
+    multifun4();
+    multifun4(0,1,2);
+    multifun4(num1,num2,num3);
+
+    /*
+    * 3. Nameless Function (Anonymous Function)
+    *
+    * function (){
+    *   //code to be executed
+    * }
+    * nameless function ကို ဒီတိုင်းရေးလို့မရဘူး variable တခုထဲထည့်ပြီမှာ ရေးလို့ရမှာ
+    * ခေါ်ရင်လည်း '()' ပြန်ခေါ်ရမယ်
+    * nameless function က parameter လည်းလက်ခံတယ်
+    * */
+    let annfun = function (){
+        document.write('My value is ' + 20 + "<br/>");
+    };
+    annfun();
+
+    let annfun1 = function (a){
+        document.write('My value is ' + a);
+    };
+    annfun1(30);
+
+    /* Constructor Function ()
+    * constructor function က string format နဲ့ သွားတဲ့အတွက် parameter မှာ String ပဲလက်ခံမယ်
+    * parameter ထဲက value ကိုလည်း ထည့်ချင်ရင် ("")double quote/('')single quote နဲ့ပဲထည့်လို့ရမယ်
+    * */
+    let confun = new Function("a","b","c","return a+b+c");
+    console.log(confun(10,20,30));
+
+    document.write("<hr/>");
+
+    /*Self Invoiking Function
+    * IIFE - Immedately Invokable Function Expresson*/
+
+//    Method 1
+    let slfun1  = function(a){
+        document.write(`I am self invoking function, my value is ${a}`);
+    }(500);
+
+    document.write("<hr/>");
+
+//    Method 2
+    (function(a){
+        document.write(`I am self invoking function, my value is ${a}`);
+    })(700);
+
+
+    /*Using Function to Function
+    * function တခုဟာနောက် function တခုရဲ့ parameter အနေနဲ့သုံးလို့ရတယ်*/
+
+    function funone(){
+        return "Hello World";
+    }
+
+    function funtwo(fun){
+        return fun;
+    }
+
+    console.log(funtwo(funone()));
+
+    /*Get Function Name (.name)*/
+    function funone(){
+        return "Hello Mandalay";
+    }
+
+    function funtwo(abc){
+        console.log(abc.name);
+    }
+    funtwo(funone);
+
+
+
+
+</script>
+
+</body>
+</html>
+
+<!--
+Function မှာ regular function and arrow function ဆိုပြီ၂မျိုးရှိတယ်
+
+1.Regular Function
+2.Arrow Function
+-->
+
+<!--
+12FUN WDFXXXX
+-->

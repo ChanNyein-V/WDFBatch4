@@ -1,139 +1,14 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>JS Intro</title>
 </head>
-
 <body>
-    <h3>Welcome to JS</h3>
+    <h3>Welcome To JS</h3>
 
     <script type="text/javascript">
-        /* 
-        console မှာဖေါ်ပြချင်ရင် console.log/အရှေ့ကဟာ function အနောက်ကဟာက method
-        semi-colon ကထည့်ချင်လည်းရတယ် မထည့်ရင်လည်းရတယ် but respect ပေးတဲ့အနေနဲ့ထည့်ရမယ်
-        */
-        console.log("Hello");
-        console.log('kyaw kyaw');
-        console.log("maung maung");
-
-        console.log(500); //number
-        console.log("500"); //String
-
-        /* cosole.log မှာ value က ၁ခုထက်ပိုပြီထုတ်လို့ရတယ်/အဲလိုထုတ်ချင်ရင် ',' ခြားပြီထုတ်လိုက်ရင်ရပြီ */
-        console.log("aung aung","kyaw kyaw");
-        console.log(10+20); //30
-        console.log(10+"40"); //1040 -> သူက num နဲ့ string နဲ့ကပ်လို့
-        console.log(50+true); // 51
-        console.log(50+false); // 50
-        console.log("aung aung " + 20); // aung aung 20
-        console.log("aung aung    " + 20); // aung aung     20 -> ဆိုလိုချင်တာက Javascript က space တွေကိုသိတယ်
-
-        /* alert box က ကျတော့ page စစဖွင့်တာနဲ့ပေါ်တယ် သူက/ပြီရင် အဲ alert မှာ ok ဆိုတာကို မနှိပ်မချင်း loading ဆိုတာကပြနေမှာ */
-        window.alert("Hello Myanmar");
-        window.alert("Save Myanmar");
-
-        /* alert လိုလည်းရေးလို့ရတယ် အဆင်ပြေတယ် */
-        alert("Fight to Rapu");
-
-        /* Variable - vartype varname = value; (const/ var/ let)
-        variable ကိုပြန်ခေါ်ရင် double/single quote ထဲထည့်စရာမလိုဘူး*/
-        const sayar = "Tin Htut Aung";
-        sy = "Tin Htut Aung"; //အဲလိုရေးရင် မှားတယ် ဒါပေမဲ့ အဖြေထွက်မယ် ဘာလို့လည်းဆိုတော့ browser ကလုပ်ပေးလိုက်တာ အရင်ကမရဘူး
-
-        console.log(sayar); // Tin Htut Aung
-        console.log("sayar"); // sayar
-        console.log(sy); // reference error တက်မယ်ပြောချင်တာ ကြေငြာထားတာမရှိဘူးလို့ပြောတာ
-
-        var sayar1 = 'Tin Htut Aung';
-        console.log(sayar1); // Tin Htut Aung
-
-        let sayar2 = "Tin Htut Aung";
-        console.log(sayar2); // Tin Htut Aung
-        console.log(sayar2,sayar2) //Tin Htut Aung
-        console.log('sayar2'); // sayar2
-
-        /* Backticks (``) to use it -> `${varname}` -> သူက single quote နဲ့ နည်းနည်းကွာတယ် 
-        variable ဆိုတာ double/single/backticks ထဲမှာ မရှိရဘူး အဲလိုရေးလိုက်ရင် ရေးလိုက်တာကို တိုက်ရိုက် ဘာသာပြန်ပေးလိုက်တယ်*/
-        console.log(`sayar`); // sayar
-        console.log(`${sayar}`); // Tin Htut Aung
-        console.log('sayar'); // sayar
-        console.log('${sayar}'); // sayar
-        console.log("${sayar}"); // sayar
-
-        /* String နဲ့ variable ကိုဆက်ရင် '+' နဲ့ ဆက်လို့ရတယ် */
-        console.log("Our teacher name is " + sayar); //Our teacher name is Tin Htut Aung
-        /* with Backticks */
-        console.log(`Our teacher name is ${sayar}`); //Our teacher name is Tin Htut Aung
-
-        window.alert(sayar); // Tin Htut Aung
-        window.alert(`Our teacher name is ${sayar}`); // Our teacher name is Tin Htut Aung
-
-        var num1 = 1500;
-        const num2 = 1000;
-
-        console.log(num1); // 1500
-        console.log(num1+num2); // 2500
-        console.log('num1+num2'); // num1 + num2
-        console.log(`${num1+num2}`); // 2500
-        console.log(`${num1} + ${num2}`); // 1500 + 1000 -> '+' က String ဖြစ်သွားလို့/နောက် backticks ထဲမှာထည့်တာ
-        console.log(`(${num1}+${num2})`); // (1500+1000)
+        console.log('hello');
+        console.log("aung aung");
     </script>
 </body>
-
 </html>
-
-<!-- 
-    Javascript ဘာအတွက်သုံးလည်းဆိုရင် action အတွက်သုံးတယ် button တွေကို action listener အတွက်သုံးတယ် နောက် calculation တွေလုပ်တဲ့အတွက် သုံးတယ်
-    
-    browser မှာဆိုရင် console ဆိုတာက calculation မှားလား မှန်လားကိုကြည့်ဖို့အတွက်သုံးတာ
-
-    Javascript မှာ console ထဲကိုဒီတိုင်းထည့်ရေးလို့မရဘူး error တက်တယ် ဘာလို့လည်းဆိုတော့ JS မှာ Datatype ဆိုတာရှိတယ်
-
-    Data Type (3) -> String,Number,Boolean ဆိုပြီရှိတယ်
-
-    String -> single quote(''),double quotes("") ထဲမှာထည့်ရေးရတယ်
-    Number -> 10,5.58, num တွေကိုဒီတိုင်းရိုက်လို့ရတယ် double/single quote ခံစရာမလိုဘူး
-    browser console မှာ number ဆိုရင် blue/ String ဆိုရင် black
-    console မှာကရေးရင် ယာယီပဲမှတ်တာ
-
-    number တွေကို '+' ကပ်ရင် ပေါင်းလိုက်တာ / String တွေကျတော့ string2ခုကို ကပ်လိုက်တာ
-    double/single quote ထဲထည့်လိုက်ရင် function ဖြစ်သွားတာ / String ဖြစ်သွားတာ
-
-    String နဲ့ number ကို '+' ရေးလိုက်ရင် -> ကပ်ပြီထွက်လာတယ် ပြောမယ်ဆိုရင် စာကြောင်း၂ခုကိုစပ်ပေးလိုက်သလိုပဲ ထွက်လာတဲ့ အဖြေကလည်း String အနေနဲ့ထွက်လာမှာ
-
-    boolean -> true,false
-    အဲဒါကို console ထဲမှာ true,false လို့ရိုက်လိုက်ရင် error မတက်တာက ဘာလို့ဆိုရင်တော့ သူက boolean ဖြစ်နေလို့
-    နောက် boolean datatype ကို ရေးရင် အားလုံးကို အသေးတွေနဲ့ပဲ ရိုက်လို့ရမှာ ကျန်တာနဲ့ရိုက်ရင် error တက်ပါမယ်
-
-    boolean ကို number ဆိုတဲ့ datatype '+' ဆိုတာနဲ့ ကပ်ရေးရင် ဘာရမလဲဆိုတော့ => 10+true = 11 ဆိုလိုချင်တာက true ရဲ့ number value က 1ဖြစ်နေလို့
-    ထိုနည်းတိုင်းပဲ false နဲ့ရေးမယ်ဆိုရင် 10+false = 10 ပဲထွက်တာက false ရဲ့ value က 0 ဖြစ်နေလို့
-    boolean ကို String နဲ့ '+' ကပ်ရေးမယ်ဆိုရင် --- 'aung' + true = aungtrue ဆိုပြီထွက်မယ် ဆိုလိုရင်းက သူဒီတိုင်းပဲကပ်ထွက်ပေးတာ false ဆိုရင်လည်းအဲလိုပဲ
-
-    10+'true' ဆိုရင်လည်းအဲလိုပဲ String အနေနဲ့ထွက်လာလိမ့်မယ်
-
-    JS မှာ data-type တွေကို ကြည့်ချင်ရင် - typeof ဆိုတာကို သုံးပြီသိနိုင်တယ်
-    typeof 10 ==> number ဆိုပြီထွက်မယ်
-    typeof(200) ==> number အဲလိုလည်းရေးလို့ရတယ်
-
-    Javascript ကို HTML ထဲမှာ body tag ထဲရေးရတယ် -> script ဆိုတဲ့ tag ကိုသုံးပြီရေးရတယ် script က HTML ရဲ့ code ဖြစ်တဘ် open/close tag ရှိလို့
-
-    CSS ကို HTML code တွေမလာခင်မှာရေးတယ် JavaScript ကျတော့ HTML code တွေရဲ့အောက်မှာရေးတယ် အဲဒါ ဘာလို့ရေးလည်းဆိုတော့
-    website တခုကို user PC မှာဖွင့်ရင် browser က code တွေကို download ချရတယ်/code တွေက waterfall အတိုင်း အလုပ်လုပ်တယ်
-    ဆိုတော့ browser တခုကို load လုပ်တဲ့အချိန်ကျရင် user တွေက အရင် interface ကိုကြည့်တာ ပြောမယ်ဆိုရင် design ဖော်မှာ နောက် Javascript က template တွေရေးတဲ့ အတွက် လေးလေ့ရှိတယ် code တွေအများကြီးရေးတဲ့အချိန်ကျရင်
-    အဲဒါကြောင့် Javascript ကို နောက်ဆုံးမှာထားတာ အဲဒါဆိုရင် user က website ကိုလေ့လာနေတဲ့အချိန်ဖတ်နေတဲ့အချိန်ကျရင် သူကအနောက်ကနေ download လုပ်မှာ
-
-    နောက် CSS code ကိုအပေါ်မှာထားတာကလည်း အကြောင်းရှိတယ် အဲလိုမဟုတ်ပဲ အောက်မှာထားရင် website ကို load လုပ်တဲ့အချိန်ကျရင် လုပ်ဆိုးဆိုးကြီးပေါ်တယ် အဲလိုမဖြစ်စေချင်လို့ CSS code ကို အရင်အပေါ်မှာတင်ပေးတာ အဲချိန်ကျရင်ပေါ်ရင် သူကလုံးဝ ကောင်းကောင်းမွန်မွန်ပေါ်လာလိမ့်မယ်
-
-    webpage တခုကို window လိုလည်း ခေါ်တယ် document လို့လည်းခေါ်တယ်
-
-    Javascript Comments -> Single (//), Multi (/* */)
-
-    Variables တွေက ဘယ်ချိန်မှာသုံးလည်းဆိုရင် ကိုယ်ရေးချင်တဲ့ value တခုကို ပြင်ချင်ရင် ခနခနပြင်စရာမလိုပဲ တနေရာကိုပြင်ပြီ ကျန်တဲ့နေရာတိုင်း အလိုလိုပြောင်းသွားမယ်
-    CSS Variable :root{ --varname--:value; }
-    Javascript Variable -> const, var, let
-    အဲ၃ခုနဲ့ကြေငြာလို့ရတယ် ဒီ 3ခုမှာတခုနဲ့တခုကွဲပြားခြားနားချက်တွေရှိတယ်
-    Variable လုပ်ချင်ရင် -
-    const varname = value;
-
- -->
